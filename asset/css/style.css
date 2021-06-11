@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*HEAD-S*/
+.nav-style{
+    background-color: #000000;
+}
+.brand-style{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+.brand1{
+    color: #E5E4E2;    
+}
+.brand2{
+    color: #A52A2A;
+}
+.nav-link-style{
+    font-size: 15px;
+    color: #A52A2A !important;
+    transition: 0.3s;
+    font-family: 'Sen', sans-serif;
+}
+
+
+/*HEAD-E*/
+/*BODY-S*/
+.div1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.div2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.div2-col1{
+    background-color: #A52A2A;
+    border: 2px solid #E5E4E2;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dropdown-style{
+    width: 100%;
+    background-color: #E5E4E2;
+    color: #A52A2A;
+    font-family: 'Sen', sans-serif;
+}
+.dropdown-menu-style{
+    width: 100%;
+    text-align: center;
+    background-color: #545b62;
+}
+.dropdown-item-style{
+    color: white;
+}
+.heading1{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #E5E4E2;
+    font-family: 'Lobster', cursive;
+}
+.button-type1{
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.3s;
+    color: #A52A2A;
+    font-family: 'Sen', sans-serif;
+}
+.button-type1:hover{
+    color: white;
+    background-color: #545b62;
+}
+.border{
+    border: 0px !important;
+}
+.hide{
+    display: none;
+}
+.pera-style{
+    color: white;
+    font-size: 15px;
+}
+/*BODY-E*/
+/*FOOTER-S*/
+
+/*FOOTER-E*/
+
+@media only screen and (min-width: 320px){
+
+
+}
+
+@media only screen and (min-width: 360px){
+
+
+}
+
+@media only screen and (min-width: 375px){
+
+
+}
+
+@media only screen and (min-width: 411px){
+
+
+}
+
+@media only screen and (min-width: 414px){
+
+
+}
+
+@media only screen and (min-width: 540px){
+
+
+}
+
+@media only screen and (min-width: 768px){
+
+
+}
+
+@media only screen and (min-width: 1024px){
+    .nav-link-style:hover{
+        transform: scale(1.2);
+        color: #E5E4E2 !important;
+    }
+
+}
+
+@media only screen and (min-width: 1025px){
+    .nav-link-style:hover{
+        transform: scale(1.2);
+        color: #E5E4E2 !important;
+    }
+
+}

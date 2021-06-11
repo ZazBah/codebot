@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CB</title>
+
+
+    <!--Bootstrap_CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Google_fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+
+    <!--My_CSS-->
+    <link rel="stylesheet" href="asset/css/style.css">
+
+</head>
+<body>
+    <!--head-start-->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-style">
+        <a class="navbar-brand brand-style" href="#"> <span class="brand1">Code</span><span class="brand2">Bot</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link nav-link-style" href="#">Navbar</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link nav-link-style" href="#">Div-Grid</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link nav-link-style" href="#">Button</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link nav-link-style" href="#">Footer</a>
+            </li>
+
+        </div>
+      </nav>
+    <!--head-end-->
+
+    <!--body-start-->
+        <div class="container-fluid div1">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <button id="CoustomButton" class="btn coustom-button">BUTTON</button>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid div2">
+          <div class="row">
+
+            <div class="col-12 col-lg-4 div2-col1">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle dropdown-style" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Button Size
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-style" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item dropdown-item-style" href="#" onclick="handleButtonPadding()">Padding</a>
+                    <a class="dropdown-item dropdown-item-style" href="#" onclick="handleButtonBorder()">Border</a>
+                    <a class="dropdown-item dropdown-item-style" href="#" onclick="handleButtonBorderRedious()">Border-Redious</a>
+                  </div>
+                </div>
+
+                <section class="padding">
+                  <h1 class="heading1">Button Padding</h1>
+                  <button class="btn button-type1" onclick="padding('5px 10px')">5px 10px</button>
+                  <button class="btn button-type1" onclick="padding('5px 50px')">5px 50px</button>
+                  <button class="btn button-type1" onclick="padding('10px 20px')">10px 20px</button>
+                  <button class="btn button-type1" onclick="padding('10px 50px')">10px 50px</button>
+                </section>
+
+                <section class="border hide">
+                  <h1 class="heading1">Button Border</h1>
+                  <button class="btn button-type1" onclick="border('1px solid')">1px</button>
+                  <button class="btn button-type1" onclick="border('2px solid')">2px</button>
+                  <button class="btn button-type1" onclick="border('3px solid')">3px</button>
+                  <button class="btn button-type1" onclick="border('5px solid')">5px</button>
+                </section>
+
+                <section class="border-radius hide">
+                  <h1 class="heading1">Button Border radius</h1>
+                  <button class="btn button-type1" onclick="borderRadius('5px')">5px</button>
+                  <button class="btn button-type1" onclick="borderRadius('10px')">10px</button>
+                  <button class="btn button-type1" onclick="borderRadius('20px')">20px</button>
+                  <button class="btn button-type1" onclick="borderRadius('50%')">50%</button>
+                </section>
+            </div>
+
+            <div class="col-12 col-lg-4  div2-col1">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle dropdown-style" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Button Font
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-style" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item dropdown-item-style" href="#" onclick="handleFontSize()">Font-Size</a>
+                    <a class="dropdown-item dropdown-item-style" href="#" onclick="handleFontWeight()">Font-Weight</a>
+                    <a class="dropdown-item dropdown-item-style" href="#" onclick="handleLetterSpecing()">Letter-Specing</a>
+                  </div>
+                </div>
+
+                <section class="font-size">
+                  <h1 class="heading1">Font-Size</h1>
+                  <button class="btn button-type1" onclick="fontSize('15px')">15px</button>
+                  <button class="btn button-type1" onclick="fontSize('20px')">20px</button>
+                  <button class="btn button-type1" onclick="fontSize('30px')">30px</button>
+                  <button class="btn button-type1" onclick="fontSize('50px')">50px</button>
+                </section>
+
+                <section class="font-weight hide">
+                  <h1 class="heading1">Font-Weight</h1>
+                  <button class="btn button-type1" onclick="fontWeight('lighter')">Lighter</button>
+                  <button class="btn button-type1" onclick="fontWeight('normal')">Normal</button>
+                  <button class="btn button-type1" onclick="fontWeight('bold')">Bold</button>
+                  <button class="btn button-type1" onclick="fontWeight('bolder')">Bolder</button>
+                </section>
+
+                <section class="letter-spacing hide">
+                  <h1 class="heading1">Letter-Spacing</h1>
+                  <button class="btn button-type1" onclick="letterSpacing('1px')">1px</button>
+                  <button class="btn button-type1" onclick="letterSpacing('2px')">2px</button>
+                  <button class="btn button-type1" onclick="letterSpacing('3px')">3px</button>
+                  <button class="btn button-type1" onclick="letterSpacing('5px')">5px</button>
+                </section>
+            </div>
+
+            <div class="col-12 col-lg-4 div2-col1">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle dropdown-style" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Button Color
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-style" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item dropdown-item-style" href="#" onclick="handleFontColor()">Font-color</a>
+                    <a class="dropdown-item dropdown-item-style" href="#" onclick="handleBackgroundColor()">Background-color</a>
+                    <a class="dropdown-item dropdown-item-style" href="#" onclick="handleBorderColor()">Border-color</a>
+                  </div>
+                </div>
+
+                <section class="font-color">
+                  <h1 class="heading1">Font-color</h1>
+                  <button class="btn button-type1" onclick="fontColor('white')">White</button>
+                  <button class="btn button-type1" onclick="fontColor('black')">Black</button>
+                  <button class="btn button-type1" onclick="fontColor('green')">Green</button>
+                  <button class="btn button-type1" onclick="fontColor('red')">Red</button>
+                </section>
+
+                <section class="background-color hide">
+                  <h1 class="heading1">Background-color</h1>
+                  <button class="btn button-type1" onclick="backgroundColor('white')">White</button>
+                  <button class="btn button-type1" onclick="backgroundColor('black')">Black</button>
+                  <button class="btn button-type1" onclick="backgroundColor('green')">Green</button>
+                  <button class="btn button-type1" onclick="backgroundColor('red')">Red</button>
+                </section>
+
+                <section class="border-color hide">
+                  <h1 class="heading1">Border-colors</h1>
+                  <button class="btn button-type1" onclick="borderColor('white')">White</button>
+                  <button class="btn button-type1" onclick="borderColor('black')">Black</button>
+                  <button class="btn button-type1" onclick="borderColor('green')">Green</button>
+                  <button class="btn button-type1" onclick="borderColor('red')">Red</button>
+                </section>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-4 offset-lg-4 div2-col1">
+              <p class="pera-style">.button-style{</p>
+                <p id="paddingOutput" class="pera-style"></p>
+                <p id="borderOutput" class="pera-style"></p>
+                <p id="borderRadiusOutput" class="pera-style"></p>
+                <p id="fontSizeOutput" class="pera-style"></p>
+                <p id="fontWeightOutput" class="pera-style"></p>
+                <p id="letterSpacingOutput" class="pera-style"></p>
+                <p id="fontColorOutput" class="pera-style"></p>
+                <p id="backgroundColorOutput" class="pera-style"></p>
+                <p id="borderColorOutput" class="pera-style"></p>
+              <p class="pera-style">}</p>
+            </div>
+          </div>
+        </div>
+    <!--body-end-->
+    
+    <!--footer-start-->
+        
+    <!--footer-end-->
+
+
+    <!--Bootstrap_JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--Fontawsome-->
+    <script src="https://kit.fontawesome.com/e6c688e1c2.js" crossorigin="anonymous"></script>
+    
+    <!--My_JavaScript-->
+    <script src="asset/js/javascript.js"></script>
+    <script src="asset/js/jequery-style.js"></script>
+    <script src="asset/js/ButtonStyle.js"></script>
+</body>
+</html>
